@@ -46,14 +46,14 @@
     combos {
         compatible = "zmk,combos";
         combo_left_square {
-            timeout-ms = <20>;
+            timeout-ms = <17>;
             key-positions = <16 17>;
             bindings = <&kp LEFT_BRACKET>;
             layers = <0 2>;
             require-prior-idle-ms = <20>;
         };
         combo_right_square {
-            timeout-ms = <20>;
+            timeout-ms = <17>;
             key-positions = <21 22>;
             bindings = <&kp RIGHT_BRACKET>;
             layers = <0 2>;
@@ -61,14 +61,14 @@
         };
 
         combo_left_squirly {
-            timeout-ms = <20>;
+            timeout-ms = <17>;
             key-positions = <42 43>;
             bindings = <&kp LEFT_BRACE>;
             layers = <0 2>;
             require-prior-idle-ms = <20>;
         };
         combo_right_squirly {
-            timeout-ms = <20>;
+            timeout-ms = <17>;
             key-positions = <47 48>;
             bindings = <&kp RIGHT_BRACE>;
             layers = <0 2>;
@@ -76,14 +76,14 @@
         };
 
         combo_equals {
-            timeout-ms = <20>;
+            timeout-ms = <17>;
             key-positions = <15 16>;
             bindings = <&kp EQUAL>;
             layers = <0 2>;
             require-prior-idle-ms = <20>;
         };
         combo_minus {
-            timeout-ms = <20>;
+            timeout-ms = <17>;
             key-positions = <22 23>;
             bindings = <&kp MINUS>;
             layers = <0 2>;
@@ -91,14 +91,14 @@
         };
 
         combo_plus {
-            timeout-ms = <20>;
+            timeout-ms = <17>;
             key-positions = <41 42>;
             bindings = <&kp PLUS>;
             layers = <0 2>;
             require-prior-idle-ms = <20>;
         };
         combo_underscore {
-            timeout-ms = <20>;
+            timeout-ms = <17>;
             key-positions = <48 49>;
             bindings = <&kp UNDERSCORE>;
             layers = <0 2>;
@@ -202,8 +202,8 @@
         function {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8       &kp F9     &kp F10           &trans
-&trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &kp C_AC_CUT    &kp C_AC_COPY    &kp C_AC_PASTE   &mkp MB5           &mmv MOVE_LEFT   &kp LEFT         &kp DOWN         &kp UP       &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp tilde   &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &kp MINUS         &kp EQUAL
+&trans      &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp LEFT         &kp DOWN         &kp UP       &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT   &kp F11    &kp F12           &trans
 &kp C_MUTE  &trans           &trans          &kp C_PREV       &kp C_NEXT       &trans             &mkp LCLK        &trans           &trans           &trans       &trans     &trans
             >;
