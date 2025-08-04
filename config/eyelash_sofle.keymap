@@ -111,7 +111,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp DOWN_ARROW>, <&kp UP_ARROW>;
-            tap-ms = <25>;
+            tap-ms = <10>;
         };
 
         sh_cap: shit_caps_tap_dance {
