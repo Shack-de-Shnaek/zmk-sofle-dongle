@@ -110,8 +110,8 @@
         scroll_encoder: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp DOWN_ARROW>, <&kp UP_ARROW>;
-            tap-ms = <10>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
         };
 
         sh_cap: shit_caps_tap_dance {
@@ -201,11 +201,11 @@
 
         function {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8       &kp F9     &kp F10           &trans
-&trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &kp MINUS         &kp EQUAL
-&trans      &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp LEFT         &kp DOWN         &kp UP       &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT   &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &kp C_PREV       &kp C_NEXT       &trans             &mkp LCLK        &trans           &trans           &trans       &trans     &trans
+&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8        &kp F9            &kp F10           &trans
+&trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp HOME         &kp PAGE_DOWN    &kp PAGE_UP   &kp END           &kp MINUS         &kp EQUAL
+&trans      &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp LEFT         &kp DOWN         &kp UP        &kp RIGHT         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT   &kp F11    &kp F12
+&kp C_MUTE  &trans           &trans          &kp C_PREV       &kp C_NEXT       &trans             &mkp LCLK        &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT    &trans            &trans
             >;
 
             display-name = "FUNCTION";
